@@ -8,7 +8,7 @@
         <br />
         <br />If you care to learn more about me and what drew me into the world of games, feel free to click below!
       </p>
-      <a class="btn btn-sm btn-outline-primary mb-3" href="/about-me">Learn more about me!</a>
+      <a class="btn btn-sm btn-outline-primary mb-3" href="about-me">Learn more about me!</a>
     </section>
     <section>
       <div class="row">
