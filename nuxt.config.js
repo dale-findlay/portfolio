@@ -13,16 +13,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", href:"https://use.fontawesome.com/releases/v5.5.0/css/all.css"}
+      { rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.5.0/css/all.css" }
     ],
     script: [
-      { src: "/bootstrap.bundle.min.js" },
+      { src: "portfolio/bootstrap.bundle.min.js" },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    {src: "~/assets/main.scss", lang: 'sass'}
+    { src: "~/assets/main.scss", lang: 'sass' }
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -52,15 +52,14 @@ export default {
     dir: 'docs'
   },
 
+  router: {
+    // Set the "Base" of the router.
+    // https://router.vuejs.org/en/api/options.html#base
+    base: '/portfolio/'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extend (config, { isDev, isClient }) {
-      if (!isDev) {
-        // relative links, please.
-        config.output.publicPath = './_nuxt/'
-      }
-      return config;
-    },
     loaders: {
       sass: {
         implementation: require('sass'),
