@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+$foreground-color: #242424;
+$background-color: #1a1a1a;
+$color-main: rgba(255, 255, 255, 0.87);
+$color-hover: rgba(255, 255, 255, 0.47);
+
+$body-bg: $background-color;
+$body-color: $color-main;
+
+$font-size-base: .75rem;
+
+$font-family-sans-serif: 'Inter', sans-serif;
+
+$nav-link-color: $color-main;
+$nav-link-hover-color: $color-hover; 
+
+.fw-semi-bold
+{
+    font-weight: 600;
+}
+
+.bg-foreground
+{
+    background-color: $foreground-color !important;
+}
+
+
+@import '~bootstrap/scss/bootstrap';
