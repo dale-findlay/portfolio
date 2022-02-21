@@ -1,9 +1,11 @@
 <template>
   <div class="container" style="max-width: 1200px !important">
     <section>
-      <div class="row mb-4">
-        <div class="col-md-3"></div>
-        <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+            <img :src="require('~/assets/profile-picture.png')" class="img-fluid p-4" alt="">
+        </div>
+        <div class="col-md-9 flex-column d-flex justify-content-center">
           <h1 class="fw-bold mb-0">About Me</h1>
           <p>
             Hi, thanks for being interested in learning a bit more about me! My name's Dale (aka Findo), I'm a developer with a passion for making cool and interesting games.
@@ -24,7 +26,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="tldr-disclaimer sticky-top">
+          <div class="tldr-disclaimer sticky-top mb-4">
             <strong class="d-block">TLDR; Version</strong>
             <p
               class="mb-0"
