@@ -143,6 +143,38 @@ export default {
       ],
       personal: [
         {
+          id: "shift",
+          name: "SHIFT (aka FPS demo)",
+          description:
+            "Shift is small fps demo im currently working on. It's set in a futuristic facility where the player has the ability to shift to an alternate universe where things are slightly different. Built using Unreal Engine 4 and C++.",
+          slides: [
+            {
+              alt: "Shift Gameplay",
+              url: require("~/assets/shift/gameplay.gif")
+            },
+            {
+              alt: "Shift Screnshot 1",
+              url: require("~/assets/shift/screenshot-1.png")
+            },
+            {
+              alt: "Shift Screnshot 2",
+              url: require("~/assets/shift/screenshot-2.png")
+            }
+          ],
+          linkBadges: [
+            {
+              type: "github",
+              href: "https://github.com/dale-findlay/fps-ue4-demo"
+            },
+            // {
+            //   type: "windows",
+            //   href:
+            //     "https://github.com/dale-findlay/dustbot-demo/releases/download/v1.0.0/Dustbot_v1.zip"
+            // }
+          ],
+          badges: ["C++", "Unreal Engine 4"]
+        },
+        {
           id: "horizon",
           name: "Horizon Game Engine",
           description:
