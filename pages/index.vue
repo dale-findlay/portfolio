@@ -72,16 +72,8 @@ export default {
             "SHADOWMAN® Darque Legacy is a third-person action-horror adventure that allows players to take up the scythe of Shadowman, following a dark path from the land of the living to the hellish realm of the Deadside. <br/><br/> This game is not yet released and is being developed and published by Blowfish Studios. <br/><br/> <small style=\"font-size: 10px; opacity: 0.7;\">SHADOWMAN® and their associated logos are trademarks of Valiant Entertainment LLC. All rights reserved. Valiant and all its associated characters and logos are registered trademarks of Valiant Entertainment LLC.</small>",
           slides: [
             {
-              alt: "TitanLake VR Splash",
+              alt: "Shadowman Splash",
               url: require("~/assets/shadowman/sm-logo.png")
-            },
-            {
-              alt: "TitanLake VR Gameplay",
-              url: require("~/assets/titanlake-vr/gameplay.gif")
-            },
-            {
-              alt: "TitanLake VR Tools",
-              url: require("~/assets/titanlake-vr/tools.jpeg")
             }
           ],
           badges: ["C++", "Unreal Engine 5", "Console"]
@@ -102,8 +94,7 @@ export default {
             "Unreal Engine 4",
             "Console",
             "Multiplayer",
-            "Crossplay",
-            "Shipped"
+            "Crossplay"
           ]
         },
         {
