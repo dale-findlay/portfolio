@@ -4,7 +4,11 @@
       <h1 class="fw-bold mb-0">Hello, World!</h1>
       <small style="opacity: 0.5" class="d-block mb-2">*obligitory hello world joke.*</small>
       <p>
-        Hi there, my name is Dale Findlay. I’m a game developer and an experienced software engineer with leadership experience, i'm always looking to learn new things and apply my skills in new and interesting ways. I pride myself on my ability to take on any challange and i'm passionate about solving complex problems with new and innovative solutions.
+        Hi there, my name is Dale Findlay. I’ve been working as a software engineer professionally for over 6 years and a game developer for 3 of those, I'm always looking to learn new things and apply my skills in new and interesting ways. I pride myself on my ability to take on any challange and i'm passionate about solving complex problems with new and innovative solutions.
+        <br />
+        <br />I'm currently working with an amazing team at Blowfish Studios as Software Engineer on awesome projects. I've got experience shipping games on consoles from start to shipped.
+        <br />
+        <br />I love rendering, networking and i'm very passionate about mentorship and sharing some of my experience as a game developer with the world to hopefully build a better industry. I'm working on a youtube series called Unity vs. Unreal, compairing the engines and showing that they at the end of the day, anyone can learn either one!
         <br />
         <br />If you care to learn more about me and what drew me into the world of games, feel free to click below!
       </p>
@@ -34,13 +38,13 @@
         </div>
         <div class="col-md-9">
           <h2 class="fw-bold">Games/Experiences</h2>
-          <p>These are the games/experiences that i've completed and shipped professionally.</p>
+          <p>These are the games/experiences that i've worked on profesionally.</p>
           <item-card v-for="game in games" v-bind:key="game.id" :itemData="game" />
           <h2 class="fw-bold mt-4">Software Development</h2>
           <p>These are the projects professionally that don't fall into the games/experiences category, but are still extremely relevent experience.</p>
           <item-card v-for="software in software" v-bind:key="software.id" :itemData="software" />
           <h2 class="fw-bold mt-4">Personal Projects</h2>
-          <p>These are some personal projects i've completed, please note that some of these are quite old, so please bare with past-me.</p>
+          <p>These are some personal projects i've completed or that i'm currently working on, please note that some of these are quite old, so please bear with past-me. Also it's super hard to balance a social life with personal projects so please also bear in mind that some of these are not yet complete 😅.</p>
           <item-card v-for="software in personal" v-bind:key="software.id" :itemData="software" />
           <h2 class="fw-bold mt-4">Game Jams / School Projects</h2>
           <p>These are some of the game jams/school projects i did that i still really love.</p>
@@ -60,12 +64,53 @@ export default {
   },
   data() {
     return {
-      games: [
+      games: [        
+        {
+          id: "shadowman",
+          name: "SHADOWMAN® Darque Legacy",
+          description:
+            "SHADOWMAN® Darque Legacy is a third-person action-horror adventure that allows players to take up the scythe of Shadowman, following a dark path from the land of the living to the hellish realm of the Deadside. <br/><br/> This game is not yet released and is being developed and published by Blowfish Studios. <br/><br/> <small style=\"font-size: 10px; opacity: 0.7;\">SHADOWMAN® and their associated logos are trademarks of Valiant Entertainment LLC. All rights reserved. Valiant and all its associated characters and logos are registered trademarks of Valiant Entertainment LLC.</small>",
+          slides: [
+            {
+              alt: "TitanLake VR Splash",
+              url: require("~/assets/shadowman/sm-logo.png")
+            },
+            {
+              alt: "TitanLake VR Gameplay",
+              url: require("~/assets/titanlake-vr/gameplay.gif")
+            },
+            {
+              alt: "TitanLake VR Tools",
+              url: require("~/assets/titanlake-vr/tools.jpeg")
+            }
+          ],
+          badges: ["C++", "Unreal Engine 5", "Console"]
+        },
+        {
+          id: "hex-gambit",
+          name: "Hex Gambit: Respawned",
+          description:
+            "Hex Gambit: Respawned is a quirky and competitive digital turn-based board game for 1-4 players. Published by Blowfish Studios an built in Unreal Engine 4, I was lead developer on the porting project for Blowfish, porting to all the current consoles (PS5, PS4, Switch, Xbox One, Xbox Series X/S, Steam (Mac/Windows). I also worked closly with the network and platform teams at Blowfish to ship a cross-play multiplayer version of the game - leading the development of the gameplay-implentnation of the network stack and porting the whole game to be multiplayer-compatible.",
+          slides: [
+            {
+              alt: "Hex Gambit: Respawned Logo",
+              url: require("~/assets/hex-gambit/logo.png")
+            }
+          ],
+          badges: [
+            "C++",
+            "Unreal Engine 4",
+            "Console",
+            "Multiplayer",
+            "Crossplay",
+            "Shipped"
+          ]
+        },
         {
           id: "titanlake-vr",
           name: "TitanLake VR",
           description:
-            "TitanLake VR is a high-fidelity VR astronaut simulation experience. The project was developed in Unreal Engine 4 and was recently awarded an Epic MegaGrant. <br /> <br />The experience was written in C++ targeting a high-performance PC-VR system.",
+            "TitanLake VR is a high-fidelity VR astronaut simulation experience. The project was developed in Unreal Engine 4 and was awarded an Epic MegaGrant. <br /> <br />The experience was written in C++ targeting a high-performance PC-VR system.",
           slides: [
             {
               alt: "TitanLake VR Splash",
@@ -143,11 +188,39 @@ export default {
       ],
       personal: [
         {
-          id: "shift",
-          name: "SHIFT (aka FPS demo)",
+          id: "rocket",
+          name: "rocket Engine",
           description:
-            "Shift is small fps demo im currently working on. It's set in a futuristic facility where the player has the ability to shift to an alternate universe where things are slightly different. Built using Unreal Engine 4 and C++.",
+            "rocket Engine is a game engine written in C++ which im using as an opporunity to get stuck into Direct X 12 and possibly Vulkan. I'd like to also use it as an opportunity to implement some of the cool features from other engines like Unreal and Unity.<br/><br/>I'm planning on doing at least the following when i have the time: <ul><li>Garbage Collection & Virtual Memory Management Fun</li><li>Render Graph complete with a DX12 PBR renderer</li>	<li>Scene Graph system</li><li>A super simple custom physics engine.</li></ul>",
           slides: [
+            {
+              alt: "Rocket Engine Splash",
+              url: require("~/assets/rocket/rocket-splash.png")
+            },
+            {
+              alt: "Rocket Engine Logo",
+              url: require("~/assets/rocket/rocket-logo.png")
+            }
+          ],
+          linkBadges: [
+            {
+              type: "github",
+              href:
+                "https://github.com/dale-findlay/rocket-engine"
+            }
+          ],
+          badges: ["C++"]
+        },
+        {
+          id: "shift",
+          name: "SHIFT",
+          description:
+            "Shift is a little project game im currently working on. It's set in a futuristic facility where the player has the ability to shift to an alternate universe where things are slightly different. Built using Unreal Engine 4 and C++.",
+          slides: [
+            {
+              alt: "Shift Logo",
+              url: require("~/assets/shift/logo.png")
+            },
             {
               alt: "Shift Gameplay",
               url: require("~/assets/shift/gameplay.gif")
@@ -165,7 +238,7 @@ export default {
             {
               type: "github",
               href: "https://github.com/dale-findlay/fps-ue4-demo"
-            },
+            }
             // {
             //   type: "windows",
             //   href:
@@ -178,7 +251,7 @@ export default {
           id: "horizon",
           name: "Horizon Game Engine",
           description:
-            "Horizon Game Engine is a game engine written in C++ with using OpenGL for rendering and implementing a Mono C# runtime for gameplay scripting. It's featured in the DustBot demo below.",
+            "Horizon Game Engine is a game engine written in C++ with using OpenGL for rendering and implementing a Mono C# runtime for gameplay scripting. It's featured in the DustBot demo below. <br/><br/> Please be mindful that i write this a while ago, i've since learned alot of new and more optimal ways of handling things. I'm exploring these as part of the Rocket Engine project listed above.",
           slides: [
             {
               alt: "Horizon Game Engine Splash",
@@ -188,7 +261,8 @@ export default {
           linkBadges: [
             {
               type: "github",
-              href: "https://github.com/dale-findlay/dustbot-demo/tree/master/DustBot/HorizonEngine"
+              href:
+                "https://github.com/dale-findlay/dustbot-demo/tree/master/DustBot/HorizonEngine"
             }
           ],
           badges: ["C++"]
@@ -252,8 +326,16 @@ export default {
           ],
           linkBadges: [
             { type: "github", href: "https://github.com/dale-findlay/UFNC" },
-            { type: "windows", href: "https://github.com/dale-findlay/UFNC/releases/download/1.0/UNFC_v1.6_Win64.zip" },
-            { type: "android", href: "https://github.com/dale-findlay/UFNC/releases/download/1.0/UNFC_v1.6_Android.apk" }
+            {
+              type: "windows",
+              href:
+                "https://github.com/dale-findlay/UFNC/releases/download/1.0/UNFC_v1.6_Win64.zip"
+            },
+            {
+              type: "android",
+              href:
+                "https://github.com/dale-findlay/UFNC/releases/download/1.0/UNFC_v1.6_Android.apk"
+            }
           ],
           badges: ["C#", "Unity", "Game Jam"]
         },
@@ -273,8 +355,15 @@ export default {
             }
           ],
           linkBadges: [
-            { type: "github", href: "https://github.com/dale-findlay/relativity" },
-            { type: "windows", href: "https://github.com/dale-findlay/relativity/releases/download/1.0/Relativity_v1_Win64.zip" }
+            {
+              type: "github",
+              href: "https://github.com/dale-findlay/relativity"
+            },
+            {
+              type: "windows",
+              href:
+                "https://github.com/dale-findlay/relativity/releases/download/1.0/Relativity_v1_Win64.zip"
+            }
           ],
           badges: ["C#", "Unity", "Game Jam"]
         },
@@ -299,7 +388,11 @@ export default {
           ],
           linkBadges: [
             { type: "github", href: "https://github.com/dale-findlay/tcfh" },
-            { type: "windows", href: "https://github.com/dale-findlay/tcfh/releases/download/1.0/TCFH_v1_Win64.zip" }
+            {
+              type: "windows",
+              href:
+                "https://github.com/dale-findlay/tcfh/releases/download/1.0/TCFH_v1_Win64.zip"
+            }
           ],
           badges: ["C#", "Unity", "Game Jam"]
         },
@@ -327,7 +420,11 @@ export default {
             }
           ],
           linkBadges: [
-            { type: "windows", href: "https://github.com/dale-findlay/frantic-food-frenzy/releases/download/prototype-v3/FFF_Prototype_v3_Win64.zip" }
+            {
+              type: "windows",
+              href:
+                "https://github.com/dale-findlay/frantic-food-frenzy/releases/download/prototype-v3/FFF_Prototype_v3_Win64.zip"
+            }
           ],
           badges: ["C#", "Unity", "Game Jam"]
         }
