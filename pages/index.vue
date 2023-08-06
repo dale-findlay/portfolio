@@ -4,7 +4,13 @@
       <h1 class="fw-bold mb-0">Hello, World!</h1>
       <small style="opacity: 0.5" class="d-block mb-2">*obligitory hello world joke.*</small>
       <p>
-        Hi there, my name is Dale Findlay. I’m a game developer and an experienced software engineer with leadership experience, i'm always looking to learn new things and apply my skills in new and interesting ways. I pride myself on my ability to take on any challange and i'm passionate about solving complex problems with new and innovative solutions.
+        Hi there, my name is Dale Findlay. I’ve been working as a software engineer professionally for over 6 years and a game developer for 3 of those, I'm always looking to learn new things and apply my skills in new and interesting ways. I pride myself on my ability to take on any challange and i'm passionate about solving complex problems with new and innovative solutions.
+        <br />
+        <br />
+        I'm currently working with an amazing team at Blowfish Studios as Software Engineer on awesome projects. I've got experience shipping games on consoles from start to shipped. 
+        <br />
+        <br />
+        I love rendering, networking and i'm very passionate about mentorship and sharing some of my experience as a game developer with the world to hopefully build a better industry. I'm working on a youtube series called Unity vs. Unreal, compairing the engines and showing that they at the end of the day, anyone can learn either one!
         <br />
         <br />If you care to learn more about me and what drew me into the world of games, feel free to click below!
       </p>
@@ -81,6 +87,19 @@ export default {
             }
           ],
           badges: ["C++", "Unreal Engine 4", "VR", "Shipped"]
+        },
+        {
+          id: "hex-gambit",
+          name: "Hex Gambit: Respawned",
+          description:
+            "Hex Gambit: Respawned is a quirky and competitive digital turn-based board game for 1-4 players. Published by Blowfish Studios an built in Unreal Engine 4, I was lead developer on the porting project for Blowfish, porting to all the current consoles (PS5, PS4, Switch, Xbox One, Xbox Series X/S, Steam (Mac/Windows). I also worked closly with the network and platform teams at Blowfish to ship a cross-play multiplayer version of the game - leading the development of the gameplay-implentnation of the network stack and porting the whole game to be multiplayer-compatible.",
+          slides: [
+            {
+              alt: "Hex Gambit: Respawned Logo",
+              url: require("~/assets/hex-gambit/logo.png")
+            }
+          ],
+          badges: ["C++", "Unreal Engine 4", "Console", "Multiplayer", "Crossplay", "Shipped"]
         },
         {
           id: "mission-risk",
