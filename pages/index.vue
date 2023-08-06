@@ -163,10 +163,14 @@ export default {
       personal: [
         {
           id: "shift",
-          name: "SHIFT (aka FPS demo)",
+          name: "SHIFT",
           description:
-            "Shift is small fps demo im currently working on. It's set in a futuristic facility where the player has the ability to shift to an alternate universe where things are slightly different. Built using Unreal Engine 4 and C++.",
+            "Shift is a little project game im currently working on. It's set in a futuristic facility where the player has the ability to shift to an alternate universe where things are slightly different. Built using Unreal Engine 4 and C++.",
           slides: [
+            {
+              alt: "Shift Logo",
+              url: require("~/assets/shift/logo.png")
+            },
             {
               alt: "Shift Gameplay",
               url: require("~/assets/shift/gameplay.gif")
