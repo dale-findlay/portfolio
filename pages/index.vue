@@ -64,7 +64,20 @@ export default {
   },
   data() {
     return {
-      games: [        
+      games: [   
+        {
+          id: "phantomgalaxies",
+          name: "PHANTOM GALAXIES™",
+          description:
+            "PHANTOM GALAXIES is an epic third-person sci-fi adventure mech shooter built in Unreal Engine 5 with thrilling combat where players can choose between four distinct Starfighter classes and diverse weapons and gear.</br></br> Published by Blowfish Studios. The game is slated for Early Access launch later this year and is being developed and published by Blowfish Studios.",
+          slides: [
+            {
+              alt: "Phantom Galaxies Splash",
+              url: require("~/assets/pg/pg-splash.jpeg")
+            }
+          ],
+          badges: ["C++", "Unreal Engine 5", "Multiplayer"]
+        }, 
         {
           id: "shadowman",
           name: "SHADOWMAN® Darque Legacy",
